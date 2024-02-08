@@ -7,16 +7,16 @@ public class Calculator {
 
         //ask user to enter the numbers
         System.out.println("Please enter the first number: ");
-        int numOne = scanner.nextInt();
+        Double numOne = scanner.nextDouble();
 
         System.out.println("Please enter the second number: ");
-        int numTwo = scanner.nextInt();
+        Double numTwo = scanner.nextDouble();
 
         //ask users if they want to add or subtract
         System.out.println("Please enter 'a' for addition, 's' for subtraction, 'm' for nultiplication, or 'd' for division: ");
         char operation = scanner.next().charAt(0);
 
-        int sum = -1;
+        Double sum = null;
         
         if(operation == 'a'){
         //Add numbers together and print result
