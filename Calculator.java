@@ -13,7 +13,7 @@ public class Calculator {
         int numTwo = scanner.nextInt();
 
         //ask users if they want to add or subtract
-        System.out.println("Please enter 'a' if you would like to add the two numbers or 's' if you would like to subtract them: ");
+        System.out.println("Please enter 'a' for addition, 's' for subtraction, 'm' for nultiplication, or 'd' for division: ");
         char operation = scanner.next().charAt(0);
 
         int sum = -1;
@@ -23,8 +23,16 @@ public class Calculator {
         sum = numOne + numTwo;
         System.out.print(sum);
         }else if(operation == 's'){
-            //subtract numbers and print result
+        //subtract numbers and print result
         sum = numOne - numTwo;
+        System.out.print(sum);
+        }else if(operation == 'm'){
+            //multiply numbers and print result
+        sum = numOne * numTwo;
+        System.out.print(sum);
+        }else if(operation == 'd'){
+            //divide numbers and print result
+        sum = numOne / numTwo;
         System.out.print(sum);
         }else{
             System.out.println("invalid option");
