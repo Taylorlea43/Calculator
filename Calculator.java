@@ -27,13 +27,17 @@ public class Calculator {
         sum = numOne - numTwo;
         System.out.print(sum);
         }else if(operation == 'm'){
-            //multiply numbers and print result
+        //multiply numbers and print result
         sum = numOne * numTwo;
         System.out.print(sum);
         }else if(operation == 'd'){
-            //divide numbers and print result
+        //divide numbers and print result
+        if(numTwo == 0){
+            System.out.println("Error: Divide by Zero");
+        }else{
         sum = numOne / numTwo;
         System.out.print(sum);
+        }
         }else{
             System.out.println("invalid option");
             return;
